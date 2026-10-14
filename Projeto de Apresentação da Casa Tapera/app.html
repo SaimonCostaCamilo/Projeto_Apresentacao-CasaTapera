@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Monte seu roteiro de experiência na Casa Tapera."><title>Monte sua experiência | Casa Tapera</title><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css"><script src="js/scrolltelling.js" defer></script><script src="js/app.js" defer></script></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">CT</span><span>CASA <b>TAPERA</b></span></a><nav class="main-nav app-nav"><a href="index.html">Home</a><a href="bootstrap.html">Bootstrap</a><a href="admin.html">Admin</a></nav></header>
+<main class="app-shell">
+  <section class="app-intro reveal"><p class="eyebrow">UMA EXPERIÊNCIA DO SEU JEITO</p><h1 class="display-title">MONTE SEU<br><em>ENCONTRO.</em></h1><p>Escolha o clima da sua próxima visita e salve um roteiro demonstrativo.</p></section>
+  <section class="section-pad story-section reveal" aria-labelledby="menu-real-title"><div class="section-kicker"><span>NO CARDÁPIO</span><span class="kicker-line"></span><span>FOTOS REAIS</span></div><h2 id="menu-real-title" class="display-title">SABORES DA<br><em>CASA.</em></h2><div class="tapera-menu-gallery"><article class="tapera-menu-card"><img src="img/pastel-mao-real-casa-tapera.jpeg" alt="Pastel crocante da Casa Tapera"><div><p class="eyebrow">CLÁSSICO DA CASA</p><h3>Pastéis crocantes</h3><p>Uma opção para compartilhar e aproveitar o momento.</p></div></article><article class="tapera-menu-card"><img src="img/sucos-naturais-casa-tapera.jpeg" alt="Sucos naturais coloridos em canecas"><div><p class="eyebrow">PARA REFRESCAR</p><h3>Sucos naturais</h3><p>Cores, frescor e sabor para acompanhar sua visita.</p></div></article><article class="tapera-menu-card"><img src="img/pasteis-casa-tapera.jpeg" alt="Pastel servido em prato"><div><p class="eyebrow">FEITO PARA CURTIR</p><h3>Mais sabores</h3><p>Confira os destaques e escolha seu próximo favorito.</p></div></article></div></section><section class="panel experience-builder reveal" aria-labelledby="builder-title"><div class="app-photo-story" role="img" aria-label="Ambiente real da Casa Tapera" style="background-image:linear-gradient(90deg,#0009,#0002),url('img/entrada-casa-tapera.jpg')"><span>UM LUGAR PARA CRIAR BOAS HISTÓRIAS</span></div><div class="panel-header"><div><p class="eyebrow">PASSO 01</p><h2 id="builder-title">Como vai ser hoje?</h2></div><span class="badge-estado">INTERATIVO</span></div>
+    <form id="experience-form"><fieldset><legend>Escolha a ocasião</legend><div class="occasion-grid">
+      <label class="occasion-option"><input type="radio" name="occasion" value="Encontro com amigos" checked><span class="occasion-icon" aria-hidden="true">✳</span><strong>Amigos</strong><small>Boa conversa</small></label>
+      <label class="occasion-option"><input type="radio" name="occasion" value="Almoço em família"><span class="occasion-icon" aria-hidden="true">⌂</span><strong>Família</strong><small>Todo mundo junto</small></label>
+      <label class="occasion-option"><input type="radio" name="occasion" value="Um momento a dois"><span class="occasion-icon" aria-hidden="true">♡</span><strong>A dois</strong><small>Sem pressa</small></label>
+    </div></fieldset>
+    <fieldset><legend>O que não pode faltar?</legend><div class="check-row"><label><input type="checkbox" name="extras" value="Comida especial"> Comida especial</label><label><input type="checkbox" name="extras" value="Uma bebida gelada"> Bebida gelada</label><label><input type="checkbox" name="extras" value="Uma longa conversa"> Uma longa conversa</label></div></fieldset>
+    <label class="field-label" for="guest-count">Quantas pessoas vão?</label><select id="guest-count" name="guestCount"><option value="1–2 pessoas">1–2 pessoas</option><option value="3–4 pessoas">3–4 pessoas</option><option value="5 ou mais pessoas">5 ou mais pessoas</option></select>
+    <label class="field-label" for="note">Algum detalhe para lembrar? (opcional)</label><textarea id="note" rows="2" maxlength="160" placeholder="Ex.: comemorar uma data especial"></textarea>
+    <button class="button button-primary" type="submit">Criar meu roteiro <span>↗</span></button>
+    </form>
+  </section>
+  <section id="result-section" class="panel result-panel reveal" hidden aria-live="polite"><p class="eyebrow">SEU ROTEIRO ESTÁ PRONTO</p><h2 class="display-title">BOM PLANO,<br><em>BOA COMPANHIA.</em></h2><div id="result-content"></div><div class="admin-actions"><button class="button button-primary" id="save-plan" type="button">Salvar roteiro</button><button class="button button-outline" id="print-plan" type="button">Imprimir / PDF</button></div><p id="plan-status" class="form-status" role="status"></p></section>
+  <section class="panel saved-panel reveal"><div class="panel-header"><div><p class="eyebrow">SEUS PLANOS</p><h2>Roteiros salvos</h2></div><button class="text-button" id="clear-plans" type="button">Limpar histórico</button></div><ul id="saved-plans" class="saved-plans"><li class="empty-state">Seus roteiros salvos aparecerão aqui.</li></ul></section>
+</main>
+<footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">CT</span><span>CASA <b>TAPERA</b></span></a><span class="footer-copy">© 2026 CASA TAPERA. TODOS OS DIREITOS RESERVADOS | DESENVOLVIDO POR EQUIPE <a class="footer-credit-link" href="https://www.instagram.com/s.aib0t/" target="_blank" rel="noopener noreferrer">S.AIB0T</a></span></footer>
+
+<!-- VLibras: tradução de conteúdos para Libras -->
+<div vw class="enabled">
+  <div vw-access-button class="active" aria-label="Abrir acessibilidade em Libras"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+</body></html>
